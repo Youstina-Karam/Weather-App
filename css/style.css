@@ -1,0 +1,137 @@
+body {
+  color: #bfc1c8;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  background: #1e202b;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+.navbar .navbar-brand h1 {
+  font-size: 20px;
+}
+.navbar .nav-item a {
+  padding: 3px 25px !important;
+  margin: 0 10px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  color: #fff;
+  transition: 0.3s ease;
+  font-weight: 400;
+}
+
+.navbar .nav-item a.active,
+.navbar .nav-item a:hover {
+  color: #009ad8;
+  border-color: #009ad8;
+}
+.search {
+  background-image: url(../img/banner.png);
+  background-size: cover;
+  padding: 70px 0;
+  min-height: 350px;
+}
+.search .location input,
+footer .subscribe input {
+  width: 100%;
+  padding: 20px 50px 20px 20px;
+  border-radius: 40px;
+  background: #1e202b;
+  color: white;
+  outline: none;
+  border: none;
+}
+.search .location button,
+footer .subscribe button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: #009ad8;
+  padding: 13px 40px;
+  border-radius: 30px;
+  color: white;
+  border: none;
+}
+
+.forecast-container {
+  background: #323544;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: -150px;
+  margin-bottom: 50px;
+}
+
+.forecast-container .card:nth-of-type(2) {
+  background-color: #262936 !important;
+}
+.forecast-container .card {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+  width: 33.33%;
+  display: block;
+  width: 100%;
+  float: left;
+}
+.forecast-container .card .card-header {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+}
+footer {
+  background: #262936;
+  padding: 50px 0;
+}
+footer .socialIcon a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #1e202b;
+  color: #009ad8;
+  transition: 0.3s ease;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 5px;
+}
+footer .socialIcon a:hover {
+  background: #009ad8;
+  color: white;
+}
+
+.navbar-toggler {
+  background-color: #323544 !important;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-nav {
+    text-align: center;
+    background: #323544;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+  }
+  .navbar-nav .nav-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .navbar .nav-item a {
+    padding: 10px 25px !important;
+  }
+  .navbar .nav-item a.active,
+  .navbar .nav-item a:hover {
+    color: #009ad8;
+    border-color: transparent;
+  }
+}

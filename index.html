@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <title>Weather</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light my-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="img/logo.png" width="64" height="38" alt="logo" />
+          <div class="logo-text px-3">
+            <h1>Weather</h1>
+            <small>tagline goes here</small>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="search mb-5">
+      <div class="container">
+        <div class="location position-relative">
+          <input type="text" id="search" placeholder="Find your location..." />
+          <button class="btn btn-primary">Find</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="weatherInfo">
+      <div class="container">
+        <div class="forecast-container" id="forecast"></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="subscribe position-relative">
+              <input
+                type="email"
+                placeholder="Enter your email to subscribe...."
+              />
+              <button class="btn btn-primary">Subscribe</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <div class="socialIcon d-flex justify-content-center py-3">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+        <p class="py-3">
+          Copyright 2024. Designed by Youstina Karam. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
