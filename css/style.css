@@ -79,7 +79,6 @@ footer .subscribe button {
   text-align: center;
   width: 33.33%;
   display: block;
-  width: 100%;
   float: left;
 }
 .forecast-container .card .card-header {
@@ -133,5 +132,8 @@ footer .socialIcon a:hover {
   .navbar .nav-item a:hover {
     color: #009ad8;
     border-color: transparent;
+  }
+  .forecast-container .card {
+    width: 100%;
   }
 }
